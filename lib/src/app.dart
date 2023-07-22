@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_instargram_clone/src/controller/bottom_nav_controller.dart';
+import 'package:flutter_instargram_clone/src/view/home.dart';
 import 'package:flutter_instargram_clone/src/widget/image_avatar.dart';
 import 'package:flutter_instargram_clone/src/widget/image_data.dart';
 
@@ -25,9 +26,7 @@ class App extends GetView<BottomNavController> {
     return IndexedStack(
       index: controller.index,
       children: [
-        Container(
-          color: Colors.red,
-        ),
+        const Home(),
         Container(
           color: Colors.blue,
         ),
@@ -51,9 +50,8 @@ class App extends GetView<BottomNavController> {
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.black,
         backgroundColor: Colors.white,
+        elevation: 0.0,
         items: [
           BottomNavigationBarItem(
               icon: ImageData(path: ImagePath.homeOff),

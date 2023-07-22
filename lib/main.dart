@@ -14,10 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       theme: ThemeData(
-        splashColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        scaffoldBackgroundColor: Colors.white,
-      ),
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          scaffoldBackgroundColor: Colors.white,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.black,
+            elevation: 0.0,
+          )),
       home: const App(),
       initialBinding: InitBinding(),
     );
