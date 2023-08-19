@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_instargram_clone/src/controller/bottom_nav_controller.dart';
 import 'package:flutter_instargram_clone/src/view/home.dart';
+import 'package:flutter_instargram_clone/src/view/mypage.dart';
 import 'package:flutter_instargram_clone/src/view/search.dart';
 import 'package:flutter_instargram_clone/src/widget/image_avatar.dart';
 import 'package:flutter_instargram_clone/src/widget/image_data.dart';
@@ -35,9 +36,7 @@ class App extends GetView<BottomNavController> {
         Container(
           color: Colors.yellow,
         ),
-        Container(
-          color: Colors.black,
-        ),
+        const MyPage(),
       ],
     );
   }
